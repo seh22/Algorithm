@@ -6,15 +6,7 @@ public class Main {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
-        int C = B - A;
-
-        int gcd = getGcd(C, B);
-
-        System.out.println(C/gcd+" "+B/gcd);
-    }
-
-    public static int getGcd(int a, int b) {
-        if (a % b == 0) return b;
-        return getGcd(b, a % b);
+        
+        System.out.println(B-A+" "+B);
     }
 }
